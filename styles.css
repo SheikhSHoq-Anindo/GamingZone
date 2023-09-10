@@ -5,3 +5,72 @@
 ul {
     list-style: none;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.menu {
+    height: 130px;
+}
+
+.left {
+    width: 253px;
+    height: 53px;
+}
+
+.right {
+    width: fit-content;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto 0 auto;
+}
+
+.logo-text {
+    line-height: 53px;
+    padding-left: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.G {
+    color: #FF42A5;
+}
+
+.right ul li {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 32px;
+}
+
+.right ul li:first-child {
+    padding-left: 0px;
+}
+
+.sub {
+    padding: 17px 26px;
+}
+
+.sub ul li {
+    padding-right: 16px;
+}
+
+.sub ul li:first-child {
+    padding: 0px;
+}
+
+.sub ul li:nth-child(2) {
+    padding-left: 24px;
+}
