@@ -18,12 +18,12 @@ ul {
     justify-content: space-between;
 }
 
-.menu {
-    height: 130px;
+.justify-center {
+    justify-content: center;
 }
 
 .left {
-    width: 253px;
+    width: auto;
     height: 53px;
 }
 
@@ -32,12 +32,20 @@ ul {
 }
 
 .container {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto 0 auto;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    padding: 38px 0 38px 0;
+    width: calc(1920px - 480px);
 }
 
 .logo-text {
-    line-height: 53px;
+    line-height: 48px;
     padding-left: 20px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
@@ -48,29 +56,293 @@ ul {
     color: #FF42A5;
 }
 
-.right ul li {
+.right nav ul li {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    padding-left: 32px;
+    padding: 17px 0px 17px 32px;
 }
 
-.right ul li:first-child {
+.right nav ul li:first-child {
     padding-left: 0px;
 }
 
-.sub {
+.right nav ul li:last-child {
+    padding: 0px 0px 0px 32px;
+}
+
+.sub-grid {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: auto auto auto;
     padding: 17px 26px;
+    border-radius: 10px;
+    background-color: #0b022315;
 }
 
-.sub ul li {
-    padding-right: 16px;
+.sub-grid-item {
+    display: flex;
 }
 
-.sub ul li:first-child {
-    padding: 0px;
+.sub-grid-item {
+    align-items: center;
 }
 
-.sub ul li:nth-child(2) {
-    padding-left: 24px;
+/* First content section */
+
+.firstContent {
+    background-image: url('images/Group 14.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.firstContent>div {
+    width: calc(1920px - 480px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 0 auto;
+}
+
+.firstContentdiv>div:first-child {}
+
+.w-50 {
+    width: 50%;
+}
+
+.firstContentHOlder {
+    height: fit-content;
+}
+
+.firstText {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 550;
+    font-size: 48px;
+}
+
+.secondText {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 95px;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    background-clip: text;
+    color: transparent;
+}
+
+.thirdText>ul {
+    padding-inline-start: 0px;
+    list-style: none;
+    margin-top: 24px;
+}
+
+.thirdText>ul>li {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.thirdText>ul>li::before {
+    margin-right: 12px;
+}
+
+.thirdText>ul>li:not(first-child)::before {
+    margin-top: 19px;
+}
+
+.thirdText>ul>li:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('images/Frame 7.png');
+    background-size: cover;
+}
+
+.thirdText>ul>li:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('images/Frame 2.png');
+    background-size: cover;
+}
+
+
+.thirdText>ul>li:last-child::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('images/Frame3.png');
+    background-size: cover;
+}
+
+.firstContent>div>img {
+    max-width: 720px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.buttons>div:first-child {
+    margin-right: 24px;
+}
+
+.btn {
+    padding: 21px 40px 21px 40px;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.btn-color-1 {
+    background-color: #FF42A5;
+}
+
+.btn-color-2 {
+    background-color: #4EC5F7;
+}
+
+/* Second content section */
+.secondContentBannerColor {
+    background-color: #ff42a40e;
+}
+
+.secondContent {
+    width: 1440px;
+    padding: 56px 0 56px 0;
+}
+
+.content-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.secondContents {
+    width: 520px;
+}
+
+.secondContent>div:last-of-type {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.secondContents>div:first-of-type>image {
+    max-width: 868px;
+}
+
+.secondContents>h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    background-clip: text;
+    color: transparent;
+}
+
+.secondContents>p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    background-clip: text;
+    color: #534C64;
+    margin-top: 24px;
+}
+
+.secondContents>div {
+    margin-top: 32px;
+}
+
+.secondContents>span:first-of-type {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    background-clip: text;
+    color: #534C64;
+    margin-top: 24px;
+}
+
+.secondContents>span:last-of-type {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 45px;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    background-clip: text;
+    color: #534C64;
+
+}
+
+@media only screen and (max-width: 1114px) {
+
+    .column-header {
+        flex-direction: column;
+    }
+
+    .column-nav {
+        flex-direction: column;
+    }
+
+    .content-center {
+        align-items: center;
+    }
+
+    .right {
+        padding: 45px 0 0 0;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .right>nav>ul {
+        padding-inline-start: 0px;
+    }
+
+    .right nav ul li {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 18px 0px 18px 0px;
+    }
+
+    .right nav ul li:last-child {
+        padding: 40px 0px 18px 0px;
+    }
+
+    /* First content section */
+
+
+    .mobileFirstContent {}
+}
+
+
+@media only screen and (min-width:1114.1px) and (max-width:1280px) {
+    .header {
+        padding: 38px 0 38px 0;
+        width: calc(1280px - 280px);
+    }
+
+    /* First content section */
+
+
+
 }
